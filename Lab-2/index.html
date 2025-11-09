@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- anchor target for "Back to Top" -->
+  <a id="top"></a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>My Portfolio</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="avatar-wrap">
+        <!-- keep your image path -->
+        <img src="/Assignment/Shreshth.jpg" alt="Profile picture" class="avatar">
+      </div>
+
+      <p class="lead">Hello! My name is Shreshth Mathur. I am learning web development and this is my first portfolio website.</p>
+    </section>
+
+    <hr>
+
+    <section id="skills" class="section skills">
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="table-wrap">
+        <table class="skills-table" summary="List of skills and level">
+          <thead>
+            <tr><th>Skill</th><th>Level</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>HTML</td><td>Beginner</td></tr>
+            <tr><td>CSS</td><td>Beginner</td></tr>
+            <tr><td>JavaScript</td><td>Learning</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="projects" class="section projects">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A simple HTML &amp; CSS webpage.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Another awesome mini project.</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Contact Me</h2>
+
+      <!-- simple form (demo). no JS. `action="#"` keeps page from navigating -->
+      <form class="contact-form" action="#" method="post">
+        <table class="contact-table">
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+          </tr>
+          <tr>
+            <td><label for="message">Message:</label></td>
+            <td><textarea id="message" name="message" placeholder="Write your message" required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="submit-wrap">
+              <button type="submit" class="btn-primary">Send</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </main>
+
+  <!-- Back to top implemented as link-->
+  <a href="#top" id="backToTop" class="back-to-top" aria-label="Back to top">⬆ Back to Top</a>
+</body>
+</html>

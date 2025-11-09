@@ -1,0 +1,209 @@
+/* ---------- Page wrapper ---------- */
+main {
+  max-width: 980px;      /* content width */
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+/* ---------- Header: full-width blue bar with centered title & small nav ---------- */
+.site-header {
+  width: 100%;
+  background: #054fb0;   /* deep blue */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
+}
+
+/* inner header keeps content centered */
+.header-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 16px 8px; /* top padding larger to match screenshot */
+  display: flex;
+  flex-direction: column; /* title above nav */
+  align-items: center;
+}
+
+/* site title */
+.site-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin-bottom: 6px;
+}
+
+/* small nav text beneath title */
+.main-nav {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+  align-items: center;
+}
+.main-nav a {
+  color: #e8f2ff; /* lighter blue */
+  text-decoration: none;
+}
+.main-nav a:hover { text-decoration: underline; }
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 30px 0;
+  background: transparent;
+}
+
+/* centered section title */
+.section-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+/* ---------- About: large round avatar inside pale circle ---------- */
+.avatar-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 6px 0 12px;
+}
+/* actual avatar image */
+.avatar {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background: transparent;
+  display: block;
+  z-index: 2;
+}
+
+/* lead paragraph under avatar (subtle centered text) */
+.lead {
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+  margin-top: 12px;
+  line-height: 1.5;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Skills table (centered, blue header) ---------- */
+.table-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+.skills-table {
+  width: 460px;
+  border-collapse: collapse;
+  box-shadow: none;
+  background: #fff;
+}
+.skills-table th, .skills-table td {
+  border: 1px solid #2b67b8;  /* blue border */
+  padding: 10px 12px;
+  font-size: 13px;
+  text-align: center;
+}
+.skills-table thead th {
+  background: #0b57b5;        /* header blue */
+  color: #fff;
+  font-weight: 700;
+}
+.skills-table tbody td { color: #222; }
+
+/* small spacing under table */
+.section.skills { padding-bottom: 24px; }
+
+/* ---------- Project cards: centered white rounded boxes ---------- */
+.project-card {
+  max-width: 680px;
+  margin: 10px auto;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+.project-card h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.project-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ---------- Contact form: boxed container with blue border ---------- */
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+.contact-box {
+  width: 520px;              /* container width */
+  border: 3px solid #245db1; /* strong blue border like screenshot */
+  background: #fff;
+  padding: 12px;
+  border-radius: 2px;
+}
+
+/* using the table layout you have */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contact-table td {
+  border: 1px solid #245db1;
+  padding: 8px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+/* inputs and textarea inside contact */
+.contact-table input[type="text"],
+.contact-table input[type="email"],
+.contact-table textarea {
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+/* message textarea roughly same height as screenshot */
+.contact-table textarea { min-height: 60px; resize: vertical; }
+
+/* submit button style inside contact box: full width small rounded blue */
+.submit-wrap { text-align: center; padding: 6px; }
+.btn-primary {
+  background: #0b57b5;
+  color: #fff;
+  border: none;
+  padding: 8px 30px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 160px;
+}
+/* ---------- Back to Top: fixed small blue button on bottom-right ---------- */
+.back-to-top {
+  position: fixed;
+  right: 14px;
+  bottom: 12px;
+  background: #083f93;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
